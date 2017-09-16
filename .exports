@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+#####	.exports
+#
+# Tmp Devel Comments
+if [[ $DOT_DEV_MODE -eq 1 ]]; then
+  SOURCED_FROM="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+  THIS_FILE=$0 #(basename $0)
+  THIS_FILE_DIR=$(dirname $THIS_FILE)
+  echo -e ">>> LOADING ....\n\tFile: $THIS_FILE\n\tFiled: $THIS_FILE_DIR\n\tSourced from: $SOURCED_FROM\n"
+fi
+#
+#
+### Personal Data
+export PROJECT_HOME=$HOME/Projects
+export USER_NAME="Matthias Kerzinger"
+#
+### General Vars
+export EDITOR='subl -w'
